@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Policies</h1>
+
+        <!-- Filter Form -->
+        <form id="filterForm">
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="educationLevel">Education Level:</label>
+                    <select id="educationLevel" class="form-control">
+                        <option value="">All</option>
+                        <option value="Primary">Primary</option>
+                        <option value="Secondary">Secondary</option>
+                        <option value="Tertiary">Tertiary</option>
+                        <option value="Graduate">Graduate</option>
+                        <option value="Postgraduate">Postgraduate</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="employmentStatus">Employment Status:</label>
+                    <select id="employmentStatus" class="form-control">
+                        <option value="">All</option>
+                        <option value="Unemployed">Unemployed</option>
+                        <option value="Employed">Employed</option>
+                        <option value="Self-employed">Self-employed</option>
+                        <option value="Student">Student</option>
+                        <option value="Retired">Retired</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <button type="submit" class="btn btn-primary mt-4">Apply Filters</button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Policy List -->
+        <div id="policyList" class="mt-4"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="policies.js"></script>
+</body>
+</html>
